@@ -30,12 +30,12 @@
 <body class="inter bg-[#deffe481]">
     <header>
         <!-- navbar -->
-        <nav class=" flex justify-between h-24 px-13 py-4 bg-white">
-            <div class="flex  gap-2 items-center">
-                <img src="assets/logo.png" class="w-16 h-16">
-                <h1 class="text-[#006747] font-extrabold text-[23px]">Emergency <br>Service</h1>
+        <nav class=" flex flex-col  justify-between h-52 border px-0 py-4 bg-white lg:flex-row lg:px-17 lg:h-28 ">
+            <div class="flex flex-col gap-2 items-center mx-auto lg:flex-row lg:mx-0">
+                <img src="assets/logo.png" class="w-16 h-16  ">
+                <h1 class="text-[#006747] font-extrabold text-[23px] lg:w-32">Emergency Service</h1>
             </div>
-            <div class=" flex items-center justify-between w-[397px] ">
+            <div class=" flex items-center justify-between mt-5 px-5 lg:w-[397px] lg:mt-0">
                 <div
                     class="flex bg-[#66f98647] h-12 rounded-[50px] w-28 font-black text-[19px] items-center justify-center gap-2">
                     <p>0</p>
@@ -54,17 +54,20 @@
         </nav>
         <!-- banner section -->
         <div
-            class="border-2 bg-gradient-to-l from-[#013223] via-[#037853] to-[#013223] text-white flex flex-col items-center justify-center h-82 ">
-            <img src="assets/logo-dark.png" class="w-[105px] h-[105px]">
-            <h1 class="font-bold text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
-            <p class="text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by
+            class="border-2 bg-gradient-to-l from-[#013223] via-[#04825a] to-[#013223] text-white flex flex-col items-center justify-center h-88 ">
+            <img src="assets/logo-dark.png" class="w-[105px] h-[105px] mb-2 lg:mb-3">
+            <h1 class="font-bold text-[36px] lg:text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-[18px] text-center font-semibold mt-1 lg:text-[20px] lg:mt-1">Government Emergency Services
+                at Your
+                Fingertip – A
+                Project by
                 Government of the People’s Republic of Bangladesh</p>
         </div>
     </header>
-    <main class="flex  max-w-[1450px] mx-auto gap-7">
+    <main class="  max-w-[1450px] mx-auto my-8 gap-7 lg:flex lg:my-14">
 
         <!-- cards container -->
-        <div class="grid grid-cols-3 gap-[20px] w-3/4">
+        <div class="grid grid-cols-1 gap-[20px] mb-6 lg:grid-cols-3 lg:w-3/4 lg:mb-0">
             <div class=" rounded-2xl  shadow-[0px_0px_10px_0px_#c2c2c2] p-8 bg-white  ">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#FFE3E2] p-3 rounded-2xl"><img src="assets/emergency.png" class="w-8 h-8  ">
@@ -250,7 +253,8 @@
 
 
         </div>
-        <div class=" bg-white items-center w-1/4 rounded-2xl shadow-[0px_0px_10px_0px_#c2c2c2] p-6">
+        <!-- call history  -->
+        <div class=" bg-white items-center  rounded-2xl shadow-[0px_0px_10px_0px_#c2c2c2] p-6 lg:w-1/4">
             <div class="flex justify-between items-center">
                 <h2 class="text-2xl font-semibold"><i class="fa-regular fa-clock"></i> Call History</h2>
                 <button
