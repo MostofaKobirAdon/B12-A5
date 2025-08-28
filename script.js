@@ -76,7 +76,45 @@ callBtnEvent(document.getElementById("power-call-btn"))
 callBtnEvent(document.getElementById("brac-call-btn"))
 callBtnEvent(document.getElementById("rail-call-btn"))
 
+// clear call history
+
 document.getElementById('clear-btn').addEventListener("click", function () {
     const historyContainer = document.getElementById("history-container")
     historyContainer.innerHTML = ``;
 })
+
+
+// copy btn functionalities
+
+
+function copyBtnEvent(element) {
+    element.addEventListener('click', function () {
+        let copyNumber = parseInt(document.getElementById('copy-num').innerText)
+
+
+
+
+        const btnParent = element.parentNode;
+        const card = btnParent.parentNode;
+
+        const number = card.children[3];
+
+        navigator.clipboard.writeText(number.textContent)
+
+
+        const alertText = 'নম্বর কপি হয়েছে '
+        alert(alertText + ': ' + number.innerText)
+        document.getElementById('copy-num').innerText++;
+
+    })
+}
+
+copyBtnEvent(document.getElementById('emergency-copy-btn'))
+copyBtnEvent(document.getElementById('police-copy-btn'))
+copyBtnEvent(document.getElementById('fire-copy-btn'))
+copyBtnEvent(document.getElementById('ambulance-copy-btn'))
+copyBtnEvent(document.getElementById('women-help-copy-btn'))
+copyBtnEvent(document.getElementById('anti-copy-btn'))
+copyBtnEvent(document.getElementById('power-copy-btn'))
+copyBtnEvent(document.getElementById('ngo-copy-btn'))
+copyBtnEvent(document.getElementById('rail-copy-btn'))
