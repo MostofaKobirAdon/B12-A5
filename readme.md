@@ -3,7 +3,7 @@
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-Ans: GetElementById is a DOM method which provides us the HTML element which has the given id . It is   used to find a specific element. 
+Ans: GetElementById is a DOM method which provides us the HTML element which has the given id . It is   used to find a specific element.
 GetElementsByClassName is a method of DOM  like getElementById but it gives us an HTML collection of elements which have the given class name . We use it to find some elements specifically . 
 On the other hand querySelector is a method which gives us the first HTML element by the given css selector . It can find elements with class , id or even tag name.
 querySelectorAll is same as querySelector, but it provides all elements with the selector in a nodelist.
@@ -12,8 +12,8 @@ querySelectorAll is same as querySelector, but it provides all elements with the
 2. How do you **create and insert a new element into the DOM**?
 
 Ans: Here are the steps for creating and inserting a new element in DOM:
-    -> First i have to create an element with a tag name .
-    -> Then i have to add the element in a section. 
+    First i have to create an element with a tag name .
+    Then i have to add the element in a section. 
 Example:  const banner = document.getElementById('banner'); 
           const newDiv = document.createElement('div');
           banner.appendChild(newDiv) 
@@ -33,6 +33,6 @@ Ans: Event Delegation is a technique where in place of attaching event listener 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 Ans: Here are the difference between preventDefault() and stopPropagation():
-    -> preventDefault() is a method to prevent the default action of an element in a specific event .But it don't stops the propagation. 
-    -> stopPropagation() is used to stop the event from going further up or down in DOM tree while bubbling or capturing.
+    preventDefault() is a method to prevent the default action of an element in a specific event .But it don't stops the propagation. 
+    stopPropagation() is used to stop the event from going further up or down in DOM tree while bubbling or capturing.
 
